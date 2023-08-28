@@ -10,7 +10,7 @@ namespace Exercises_C_Sharp.E01_Einleitung
         {
             //Programmieren Sie folgende Anweisungen aus:
 
-            //Teilen Sie dreimal die Zahl 459 durch und geben Sie das Ergebnis aus:
+            //Teilen Sie dreimal die Zahl 343 durch 7 und geben Sie das Ergebnis aus:
             //Code START
             
             //Code ENDE
