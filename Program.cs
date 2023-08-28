@@ -110,6 +110,23 @@ namespace Exercises_C_Sharp
             };
             
             
+
+            //************************
+            //*******Methoden*******
+            //************************
+            ExerciseGroup methodsElements = new ExerciseGroup()
+            {
+                Name = "Methoden",
+                ElementList = new List<ExerciseElement>()
+                {
+                    new ExerciseElement(){Name = "Übung 1", Method = XX_Methods.Exercise_1.Start},
+                    new ExerciseElement(){Name = "Übung 2", Method = XX_Methods.Exercise_2.Start},
+                    new ExerciseElement(){Name = "Übung 3", Method = XX_Methods.Exercise_3.Start},
+                    new ExerciseElement(){Name = "Übung 4", Method = XX_Methods.Exercise_4.Start},
+                    new ExerciseElement(){Name = "Übung 5", Method = XX_Methods.Exercise_5.Start},
+                    new ExerciseElement(){Name = "Übung 6", Method = XX_Methods.Exercise_6.Start}
+                }
+            };
             
             //************************
             //*******Überladung*******
@@ -368,6 +385,7 @@ namespace Exercises_C_Sharp
                 arrayElements,
                 listElements,
                 enumElements,
+                methodsElements,
                 ueberladungElements,
                 moredimensionalArrayElements,
                 jaggedArrayElements,
@@ -390,6 +408,7 @@ namespace Exercises_C_Sharp
         static void Menu()
         {
             Console.Clear();
+            Console.SetCursorPosition(0,0);
             LoadMarkedExercises();
             var pos = LoadCurrentElementAndCurrentList();
             int currentElement = pos.Item1;
@@ -397,12 +416,14 @@ namespace Exercises_C_Sharp
 
             while(true)
             {
+                Console.Clear();
                 for(int k = 0; k < OptionList.Count; k++)
                 {
                     var element = OptionList[k];
                     Console.WriteLine("**********************");
                     Console.WriteLine(element.Name);
                     Console.WriteLine("**********************");
+                    //Console.ReadKey();
                     if(currentList == k)
                     {
                         for(int i = 0; i < element.ElementList.Count; i++)
@@ -415,6 +436,7 @@ namespace Exercises_C_Sharp
                 var key = Console.ReadKey();
                 if(key.Key == ConsoleKey.UpArrow)
                 {
+                    Console.Clear();
                     if(currentElement == 0 && currentList == 0)
                     {
                         currentList = OptionList.Count -1;
@@ -430,6 +452,7 @@ namespace Exercises_C_Sharp
                 }
                 else if(key.Key == ConsoleKey.DownArrow)
                 {
+                    Console.Clear();
                     if(currentElement == OptionList[currentList].ElementList.Count - 1 && currentList == OptionList.Count -1)
                     {
                         currentList = 0;
@@ -468,6 +491,7 @@ namespace Exercises_C_Sharp
                 }
                 else if(key.Key == ConsoleKey.X)
                 {
+                    Console.Clear();
                     var el = OptionList[currentList].ElementList[currentElement];
                     if(el.IsMarked == false)
                         OptionList[currentList].ElementList[currentElement].IsMarked = true;
