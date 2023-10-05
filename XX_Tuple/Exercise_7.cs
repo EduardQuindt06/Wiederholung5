@@ -6,52 +6,33 @@ namespace Exercises_C_Sharp.XX_Tuple
 {
     class Exercise_7
     {
-        //Sie sollen ein Kochbuch in einer Liste implementieren. In diesem Kochbuch steht zuerst das Produkt, dann folgt eine Liste mit Zutaten und deren Mengen. Sie sollen auch noch zusätzlich zwei weitere Methoden schreiben, dem Nutzer ein Element löschen und dem Nutzer ein Element hinzufügen lassen.
-        static List<Tuple<string, List<Tuple<string,double>>>> Kochbuch = new List<Tuple<string, List<Tuple<string,double>>>>();
+        //Sorgen Sie dafür, dass "Elementarelement" ausgegeben wird.
+
         public static void Start()
         {
-            //Starten Sie hier und füllen Sie die Liste 'Kochbuch' mit mindesten drei Rezepten
             //Code START
-
+            dynamic element = -1;
             //Code ENDE
+            Meth(element);
             
-            Console.WriteLine("------ Gefülltes Kochbuch -----");
-            ShowKochbuch();
-            AddNewToKochbuch();
-            Console.WriteLine("------ Zusätzliches Rezept -----");
-            ShowKochbuch();
-            DeleteElementFromKochbuch();
-            Console.WriteLine("------ Rezept gelöscht -----");
-            ShowKochbuch();
         }
-        //Hier werden alle Rezepte ausgegeben
-        static void ShowKochbuch()
+
+        static void Meth(dynamic tup)
         {
-            foreach(var recipes in Kochbuch)
+            int temp = tup.Item2;
+            while(tup.Item1.Length <= temp || temp < 0)
             {
-                Console.WriteLine("*****************");
-                Console.WriteLine("*** {0}", recipes.Item1);
-                Console.WriteLine("*****************");
-                foreach(var element in recipes.Item2)
+                if(temp < 0)
                 {
-                    Console.WriteLine("- {0}: {1}", element.Item1, element.Item2);
+                    temp *= -1;
+                    continue;
                 }
-                Console.WriteLine();
+                temp /= 2;
             }
-        }
-        //In dieser Methode kann der Anwender ein Element aus dem Kochbuch löschen lassen
-        static void DeleteElementFromKochbuch()
-        {
-            //Code START
-
-            //Code ENDE
-        }
-        //In dieser Methode soll der Anwender ein Rezept hinzufügen können
-        static void AddNewToKochbuch()
-        {
-            //Code START
-
-            //Code ENDE
+            for(int i = temp; i >= 0; i--)
+                Console.Write(tup.Item1[i]);
+            for(int i = tup.Item1.Length - 1; i > temp; i--)
+                Console.Write(tup.Item1[i]);
         }
     }
 }

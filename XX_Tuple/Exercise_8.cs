@@ -6,33 +6,34 @@ namespace Exercises_C_Sharp.XX_Tuple
 {
     class Exercise_8
     {
-        //Sorgen Sie dafür, dass "Elementarelement" ausgegeben wird.
-
+        //Die Methode soll den Nutzer nach Strings fragen. Wenn der nutzer nichts eingibt, dann soll die Methode Start() die Methode Meth() mit den eingegebenen Werten aufrufen.
         public static void Start()
         {
             //Code START
             dynamic element = -1;
             //Code ENDE
-            Meth(element);
+            foreach(var item in Meth(element))
+            {
+                //Geben Sie hier die einzelnen Werte in dieser Form aus:
+                //Haus -> 2 Selbstlaute
+                //Bauer -> 3 Selbstlaute
+                //Er -> 1 Selbstlaut
+                //Achten Sie auf die deutsche Grammatik!
+
+                //Code START
+
+                //Code ENDE
+            }
             
         }
-
-        static void Meth(dynamic tup)
+        //Sorgen Sie dafür, dass die Methode eine Liste der Strings mit deren Anzahl an Selbstlauten zurück gibt:
+        static List<Tuple<string,int>> Meth(List<string> stringList)
         {
-            int temp = tup.Item2;
-            while(tup.Item1.Length <= temp || temp < 0)
-            {
-                if(temp < 0)
-                {
-                    temp *= -1;
-                    continue;
-                }
-                temp /= 2;
-            }
-            for(int i = temp; i >= 0; i--)
-                Console.Write(tup.Item1[i]);
-            for(int i = tup.Item1.Length - 1; i > temp; i--)
-                Console.Write(tup.Item1[i]);
+            //Code START
+            dynamic returnList = -1;
+            //Code ENDE
+
+            return returnList;
         }
     }
 }

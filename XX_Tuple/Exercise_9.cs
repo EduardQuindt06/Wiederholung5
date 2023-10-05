@@ -6,34 +6,52 @@ namespace Exercises_C_Sharp.XX_Tuple
 {
     class Exercise_9
     {
-        //Die Methode soll den Nutzer nach Strings fragen. Wenn der nutzer nichts eingibt, dann soll die Methode Start() die Methode Meth() mit den eingegebenen Werten aufrufen.
+        //Sie sollen ein Kochbuch in einer Liste implementieren. In diesem Kochbuch steht zuerst das Produkt, dann folgt eine Liste mit Zutaten und deren Mengen. Sie sollen auch noch zusätzlich zwei weitere Methoden schreiben, dem Nutzer ein Element löschen und dem Nutzer ein Element hinzufügen lassen.
+        static List<Tuple<string, List<Tuple<string,double>>>> Kochbuch = new List<Tuple<string, List<Tuple<string,double>>>>();
         public static void Start()
         {
+            //Starten Sie hier und füllen Sie die Liste 'Kochbuch' mit mindesten drei Rezepten
             //Code START
-            dynamic element = -1;
+
             //Code ENDE
-            foreach(var item in Meth(element))
-            {
-                //Geben Sie hier die einzelnen Werte in dieser Form aus:
-                //Haus -> 2 Selbstlaute
-                //Bauer -> 3 Selbstlaute
-                //Er -> 1 Selbstlaut
-                //Achten Sie auf die deutsche Grammatik!
-
-                //Code START
-
-                //Code ENDE
-            }
             
+            Console.WriteLine("------ Gefülltes Kochbuch -----");
+            ShowKochbuch();
+            AddNewToKochbuch();
+            Console.WriteLine("------ Zusätzliches Rezept -----");
+            ShowKochbuch();
+            DeleteElementFromKochbuch();
+            Console.WriteLine("------ Rezept gelöscht -----");
+            ShowKochbuch();
         }
-        //Sorgen Sie dafür, dass die Methode eine Liste der Strings mit deren Anzahl an Selbstlauten zurück gibt:
-        static List<Tuple<string,int>> Meth(List<string> stringList)
+        //Hier werden alle Rezepte ausgegeben
+        static void ShowKochbuch()
+        {
+            foreach(var recipes in Kochbuch)
+            {
+                Console.WriteLine("*****************");
+                Console.WriteLine("*** {0}", recipes.Item1);
+                Console.WriteLine("*****************");
+                foreach(var element in recipes.Item2)
+                {
+                    Console.WriteLine("- {0}: {1}", element.Item1, element.Item2);
+                }
+                Console.WriteLine();
+            }
+        }
+        //In dieser Methode kann der Anwender ein Element aus dem Kochbuch löschen lassen
+        static void DeleteElementFromKochbuch()
         {
             //Code START
-            dynamic returnList = -1;
-            //Code ENDE
 
-            return returnList;
+            //Code ENDE
+        }
+        //In dieser Methode soll der Anwender ein Rezept hinzufügen können
+        static void AddNewToKochbuch()
+        {
+            //Code START
+
+            //Code ENDE
         }
     }
 }
