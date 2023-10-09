@@ -4,9 +4,15 @@ namespace Exercises_C_Sharp.E08_If
     {
         public static void Start()
         {
-            //Code START
+            //Sorgen Sie dafür, dass auf der Konsole immer "Hallo!" ausgegeben wird.
+            bool b = true;
+            bool c = false;
+
+
+            if(b /*Code START*/&&/*Code ENDE*/ c)
+                Console.WriteLine("Hallo!");
+
             
-            //Code ENDE
         }
     }
 }
