@@ -16,7 +16,14 @@ namespace Exercises_C_Sharp.E08_If
             
             //Code ENDE
             if(b)
-                Console.Write("Hello");
+                Console.Write("He");
+
+            //Code START
+
+            //Code ENDE
+            if(!b)
+                Console.Write("llo");
+
 
             //Code START
 
