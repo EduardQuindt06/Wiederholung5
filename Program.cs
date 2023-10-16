@@ -108,8 +108,70 @@ namespace Exercises_C_Sharp
                     new ExerciseElement(){Name = "Übung 12", Method = Exercises_C_Sharp.E05_Arrays.Exercise_12.Start}
                 }
             };
-            
-            
+            //************************
+            //********Random**********
+            //************************
+            ExerciseGroup randomElements = new ExerciseGroup()
+            {
+                Name = "6. Random",
+                ElementList = new List<ExerciseElement>()
+                {
+                    new ExerciseElement(){Name = "Übung 1", Method = Exercises_C_Sharp.E06_Random.Exercise_1.Start},
+                    new ExerciseElement(){Name = "Übung 2", Method = Exercises_C_Sharp.E06_Random.Exercise_2.Start},
+                    new ExerciseElement(){Name = "Übung 3", Method = Exercises_C_Sharp.E06_Random.Exercise_3.Start},
+                    new ExerciseElement(){Name = "Übung 4", Method = Exercises_C_Sharp.E06_Random.Exercise_4.Start},
+                    new ExerciseElement(){Name = "Übung 5", Method = Exercises_C_Sharp.E06_Random.Exercise_5.Start},
+                    new ExerciseElement(){Name = "Übung 6", Method = Exercises_C_Sharp.E06_Random.Exercise_6.Start}
+                }
+            };
+            //************************
+            //*******DateTime*********
+            //************************
+            ExerciseGroup datetimeElements = new ExerciseGroup()
+            {
+                Name = "6. DateTime",
+                ElementList = new List<ExerciseElement>()
+                {
+                    new ExerciseElement(){Name = "Übung 1", Method = Exercises_C_Sharp.E07_DateTime.Exercise_1.Start},
+                    new ExerciseElement(){Name = "Übung 2", Method = Exercises_C_Sharp.E07_DateTime.Exercise_2.Start},
+                    new ExerciseElement(){Name = "Übung 3", Method = Exercises_C_Sharp.E07_DateTime.Exercise_3.Start},
+                    new ExerciseElement(){Name = "Übung 4", Method = Exercises_C_Sharp.E07_DateTime.Exercise_4.Start},
+                    new ExerciseElement(){Name = "Übung 5", Method = Exercises_C_Sharp.E07_DateTime.Exercise_5.Start},
+                    new ExerciseElement(){Name = "Übung 6", Method = Exercises_C_Sharp.E07_DateTime.Exercise_6.Start},
+                    new ExerciseElement(){Name = "Übung 7", Method = Exercises_C_Sharp.E07_DateTime.Exercise_7.Start}
+                }
+            };
+            //************************
+            //********* IF ***********
+            //************************
+            ExerciseGroup ifElements = new ExerciseGroup()
+            {
+                Name = "6. if",
+                ElementList = new List<ExerciseElement>()
+                {
+                    new ExerciseElement(){Name = "Übung 1", Method = Exercises_C_Sharp.E08_If.Exercise_1.Start},
+                    new ExerciseElement(){Name = "Übung 2", Method = Exercises_C_Sharp.E08_If.Exercise_2.Start},
+                    new ExerciseElement(){Name = "Übung 3", Method = Exercises_C_Sharp.E08_If.Exercise_3.Start},
+                    new ExerciseElement(){Name = "Übung 4", Method = Exercises_C_Sharp.E08_If.Exercise_4.Start},
+                    new ExerciseElement(){Name = "Übung 5", Method = Exercises_C_Sharp.E08_If.Exercise_5.Start},
+                    new ExerciseElement(){Name = "Übung 6", Method = Exercises_C_Sharp.E08_If.Exercise_6.Start},
+                    new ExerciseElement(){Name = "Übung 7", Method = Exercises_C_Sharp.E08_If.Exercise_7.Start},
+                    new ExerciseElement(){Name = "Übung 8", Method = Exercises_C_Sharp.E08_If.Exercise_8.Start},
+                    new ExerciseElement(){Name = "Übung 9", Method = Exercises_C_Sharp.E08_If.Exercise_9.Start},
+                    new ExerciseElement(){Name = "Übung 10", Method = Exercises_C_Sharp.E08_If.Exercise_10.Start},
+                    new ExerciseElement(){Name = "Übung 11", Method = Exercises_C_Sharp.E08_If.Exercise_11.Start},
+                    new ExerciseElement(){Name = "Übung 12", Method = Exercises_C_Sharp.E08_If.Exercise_12.Start},
+                    new ExerciseElement(){Name = "Übung 13", Method = Exercises_C_Sharp.E08_If.Exercise_13.Start},
+                    new ExerciseElement(){Name = "Übung 14", Method = Exercises_C_Sharp.E08_If.Exercise_14.Start},
+                    new ExerciseElement(){Name = "Übung 15", Method = Exercises_C_Sharp.E08_If.Exercise_15.Start},
+                    new ExerciseElement(){Name = "Übung 16", Method = Exercises_C_Sharp.E08_If.Exercise_16.Start},
+                    new ExerciseElement(){Name = "Übung 17", Method = Exercises_C_Sharp.E08_If.Exercise_17.Start},
+                    new ExerciseElement(){Name = "Übung 18", Method = Exercises_C_Sharp.E08_If.Exercise_18.Start}
+                }
+            };
+
+
+
 
             //************************
             //*******Methoden*******
@@ -143,8 +205,6 @@ namespace Exercises_C_Sharp
                     new ExerciseElement(){Name = "Übung 5", Method = XX_Überladung.Exercise_5.Start}
                 }
             };
-
-
             //************************
             //********LISTEN**********
             //************************
@@ -168,8 +228,6 @@ namespace Exercises_C_Sharp
                     new ExerciseElement(){Name = "Übung 13", Method = XX_Lists.Exercise_13.Start}
                 }
             };
-
-
             //************************
             //*********Enums**********
             //************************
@@ -193,7 +251,6 @@ namespace Exercises_C_Sharp
                     new ExerciseElement(){Name = "Übung 13", Method = XX_Enumns.Exercise_13.Start}
                 }
             };
-
             //************************
             //*********Tuple**********
             //************************
@@ -213,7 +270,6 @@ namespace Exercises_C_Sharp
                     new ExerciseElement(){Name = "Übung 9", Method = XX_Tuple.Exercise_9.Start}
                 }
             };
-
             //************************
             //*Mehrdimensinale Arrays*
             //************************
@@ -231,7 +287,6 @@ namespace Exercises_C_Sharp
                     new ExerciseElement(){Name = "Übung 7", Method = XX_Mehrdimensionale_Arrays.Exercise_7.Start}
                 }
             };
-
             //************************
             //******Jagged Arrays*****
             //************************
@@ -246,7 +301,6 @@ namespace Exercises_C_Sharp
                     new ExerciseElement(){Name = "Übung 4", Method = XX_Jagged_Arrays.Exercise_4.Start}
                 }
             };
-
             //************************
             //********Klassen*********
             //************************
@@ -264,7 +318,6 @@ namespace Exercises_C_Sharp
                     new ExerciseElement(){Name = "Übung 7", Method = Exercises_C_Sharp.XX_Classes.Exercise_7.Start}
                 }
             };
-
             //************************
             //****Konstruktoren*******
             //************************
@@ -282,7 +335,6 @@ namespace Exercises_C_Sharp
                     new ExerciseElement(){Name = "Übung 7", Method = Exercises_C_Sharp.XX_Konstruktoren.Exercise_7.Start}
                 }
             };
-
             //************************
             //******Exceptions********
             //************************
@@ -301,9 +353,7 @@ namespace Exercises_C_Sharp
                     new ExerciseElement(){Name = "Übung 8", Method = Exercises_C_Sharp.XX_Exceptions.Exercise_8.Start},
                     new ExerciseElement(){Name = "Übung 9", Method = Exercises_C_Sharp.XX_Exceptions.Exercise_9.Start}
                 }
-            };
-            
-
+            };        
             //************************
             //****Sonderaufgaben******
             //************************
@@ -383,6 +433,10 @@ namespace Exercises_C_Sharp
                 stringElements,
                 terminalElements,
                 arrayElements,
+                randomElements,
+                datetimeElements,
+                ifElements,
+                
                 listElements,
                 enumElements,
                 methodsElements,

@@ -5,7 +5,7 @@ using System.Data.Common;
 
 namespace Exercises_C_Sharp.E08_If
 {
-    class Exercise_
+    class Exercise_1
     {
         public static void Start()
         {
