@@ -7,7 +7,7 @@ namespace Exercises_C_Sharp.Schulaufgaben
         //3. Jetzt soll der Code so erweitert werden, dass bei 10-maligen Vorkommen von dem Status "Failed" das Programm beendet wird. Implementieren Sie diese Funktion!
         static List<States> StateList = new List<States>();
 
-        static void Start()
+        public static void Start()
         {
             Console.WriteLine("Programmstart");
             FirstFill();

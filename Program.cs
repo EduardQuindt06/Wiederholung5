@@ -354,32 +354,7 @@ namespace Exercises_C_Sharp
                     new ExerciseElement(){Name = "Übung 9", Method = Exercises_C_Sharp.XX_Exceptions.Exercise_9.Start}
                 }
             };        
-            //************************
-            //****Sonderaufgaben******
-            //************************
-            ExerciseGroup specialElements = new ExerciseGroup()
-            {
-                Name = "Sonderaufgaben",
-                ElementList = new List<ExerciseElement>()
-                {
-                    new ExerciseElement(){Name = "Schere Stein Papier Echse Spock", Method = Exercises_C_Sharp.Sonderaufgaben.Exercise_1.Start},
-                    new ExerciseElement(){Name = "Schiffe versenken", Method = Exercises_C_Sharp.Sonderaufgaben.Exercise_2.Start},
-                    new ExerciseElement(){Name = "Memory", Method = Exercises_C_Sharp.Sonderaufgaben.Exercise_3.Start}
-                }
-            };
             
-            //************************
-            //*Entwicklungsaufgaben***
-            //************************
-            ExerciseGroup developElements = new ExerciseGroup()
-            {
-                Name = "Entwicklungsaufgaben",
-                ElementList = new List<ExerciseElement>()
-                {
-                    new ExerciseElement(){Name = "Dynamische Eingaben in Echtzeit", Method = Exercises_C_Sharp.Entwicklungsaufgaben.Minispiele.Step_1.Start}
-                }
-            };
-
             //************************
             //***Dateizugriffe********
             //************************
@@ -426,6 +401,55 @@ namespace Exercises_C_Sharp
                 }
             };
 
+
+
+            //************************
+            //****Sonderaufgaben******
+            //************************
+            ExerciseGroup specialElements = new ExerciseGroup()
+            {
+                Name = "Sonderaufgaben",
+                ElementList = new List<ExerciseElement>()
+                {
+                    new ExerciseElement(){Name = "Schere Stein Papier Echse Spock", Method = Exercises_C_Sharp.Sonderaufgaben.Exercise_1.Start},
+                    new ExerciseElement(){Name = "Schiffe versenken", Method = Exercises_C_Sharp.Sonderaufgaben.Exercise_2.Start},
+                    new ExerciseElement(){Name = "Memory", Method = Exercises_C_Sharp.Sonderaufgaben.Exercise_3.Start}
+                }
+            };
+            
+            //************************
+            //*Entwicklungsaufgaben***
+            //************************
+            ExerciseGroup developElements = new ExerciseGroup()
+            {
+                Name = "Entwicklungsaufgaben",
+                ElementList = new List<ExerciseElement>()
+                {
+                    new ExerciseElement(){Name = "Dynamische Eingaben in Echtzeit", Method = Exercises_C_Sharp.Entwicklungsaufgaben.Minispiele.Step_1.Start}
+                }
+            };
+
+            //************************
+            //****Schulaufgaben*******
+            //************************
+            ExerciseGroup examElements = new ExerciseGroup()
+            {
+                Name = "Schulaufgaben",
+                ElementList = new List<ExerciseElement>()
+                {
+                    new ExerciseElement(){Name = "001 Klassen", Method = Exercises_C_Sharp.Schulaufgaben.S001_Class.Start},
+                    new ExerciseElement(){Name = "002 Klassen", Method = Exercises_C_Sharp.Schulaufgaben.S002_Class.Start},
+                    new ExerciseElement(){Name = "003 Tuple", Method = Exercises_C_Sharp.Schulaufgaben.S003_Tuple.Start},
+                    new ExerciseElement(){Name = "004 Enum", Method = Exercises_C_Sharp.Schulaufgaben.S004_Enum.Start},
+                    new ExerciseElement(){Name = "005 Tuple", Method = Exercises_C_Sharp.Schulaufgaben.S005_Tuple.Start},
+                    new ExerciseElement(){Name = "006 Multidimensionale Arrays", Method = Exercises_C_Sharp.Schulaufgaben.S006_Multidimensionale_Arrays.Start},
+                    new ExerciseElement(){Name = "007 Enum", Method = Exercises_C_Sharp.Schulaufgaben.S007_Enum.Start},
+                    new ExerciseElement(){Name = "008 Enum", Method = Exercises_C_Sharp.Schulaufgaben.S008_Enum.Start}
+                }
+            };
+            
+
+
             //Zusammenführung
             OptionList = new List<ExerciseGroup>(){
                 beginnerElements,
@@ -450,7 +474,9 @@ namespace Exercises_C_Sharp
                 constructorElements,
                 exceptionElements,
                 filesystemElements,
-                mysqlElements
+                mysqlElements,
+
+                examElements
             };
 
             Menu();
